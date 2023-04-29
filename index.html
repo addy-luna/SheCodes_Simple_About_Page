@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I love a good book!</title>
+
+    <style>
+        img {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        border-radius: 2%;
+        }
+
+        .container {
+            display: block;
+            width: 50%;
+            padding: 30px;
+            margin: 30px auto;
+            border-radius: 10px;
+            background: radial-gradient(circle at 7.5% 24%, #eda1c1 0%, rgb(252, 215, 212) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);    
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       
+        h1 {
+            font-size: 48px;
+            font-weight: 100;
+            text-align: center;
+        }
+
+
+        body {
+            text-align: center;
+            background: rgb(241, 234, 237);
+            block-size: auto;
+            width:100%;
+            height:100%;
+            
+        }
+
+        button {
+            margin: 20px auto;
+            display: block;
+            color: #eda1c1;
+            font-size: 16px;
+            background: white;
+            padding: 15px 20px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px grey;
+            border-style: hidden;
+        }
+
+        button:hover {
+            background-color: #eda1c1;
+            color:white; 
+            transition: all 500ms ease-in;
+        }
+
+    
+
+        .contact {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .footer {
+            color: white;
+            text-decoration: none;
+            te
+        }
+
+        a:link {
+            color: #eda1c1;
+            text-decoration: none;
+        }
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        I love Books! &#128214
+      </h1>
+      <h2>
+        Especially Mystery, Thriller, and Fantasy Novels. 
+      </h2>
+      <hr>
+      <img
+        src="./images/library.jpg"
+        alt="Antique Books"
+      />
+      <hr>
+      <p>
+        Whether you enjoy manga, mystery, romance. There will always be a 
+        book for you. A form of escapism and a way to free your mind. Books
+        have always been a form of education and storytelling that will last 
+        generations.
+      </p>
+      
+      <a
+        href="https://en.wikipedia.org/wiki/Lists_of_books"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      
+      <button class="buy">
+        👉 Buy some hit books here!
+      </button>
+
+      <p class="footer">
+    <small>
+        This page was built by
+        <em><a href="https://www.linkedin.com/in/adela-tatum-13b213162/" target="_blank">
+          Adela Tatum
+        </a>
+    </em>
+</small>
+      </p>
+
+      <script>
+        document.querySelector(".buy").addEventListener("click", function() {
+            let name = prompt("What is your favorite book?");
+            if (name.length) {
+                alert("Awesome, we have " + name + " in stock! We will be in touch!")
+            } else {
+                alert("That's ok! I can recommend a book for you!")
+            }
+        });
+        </script>
+</div>
+</body>
+</html>
